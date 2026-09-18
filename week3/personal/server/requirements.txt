@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+python-multipart
+sqlmodel
+requests
+anthropic
+python-dotenv

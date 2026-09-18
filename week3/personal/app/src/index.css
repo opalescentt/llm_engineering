@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+
+  --color-ink: #0d0d10;
+  --color-paper: #ffffff;
+  --color-surface: #fafafa;
+  --color-line: #e2e2e5;
+  --color-line-strong: #0d0d10;
+  --color-muted: #6b6b72;
+
+  --color-accent: #ff2e88;
+  --color-accent-ink: #ffffff;
+  --color-accent-soft: #ffe3ef;
+
+  --color-ok: #16794f;
+  --color-warn: #b3550a;
+
+  --spacing: 8px;
+}
+
+html {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background: var(--color-paper);
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  border-color: var(--color-line);
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-accent-ink);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
